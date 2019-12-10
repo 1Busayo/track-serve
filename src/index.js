@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(authRoutes);
 app.use(trackRoutes);
 
-const mongoUri = '';
+const mongoUri = 'mongodb://<dbuser>:<dbpassword>@ds353338.mlab.com:53338/heroku_87bpclv5';
 if (!mongoUri) {
   throw new Error(
     `MongoURI was not supplied.  Make sure you watch the video on setting up Mongo DB!`
